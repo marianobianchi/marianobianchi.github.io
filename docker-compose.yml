@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: jekyll
+    working_dir: /usr/src/app
+    volumes:
+      - ./docs:/usr/src/app
+    ports:
+      - "5000:5000"
