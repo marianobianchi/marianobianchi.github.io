@@ -17,8 +17,8 @@ This last thought made me realize that I need to start writing to myself of the 
 
 Although I have a lot of things I have read about this, the main blogs I usually read and that I found inspiring and with great ideas and posts are:
 
-- https://simonwillison.net/
-- https://adamj.eu/tech/
+- [https://simonwillison.net/](https://simonwillison.net/)
+- [https://adamj.eu/tech/](https://adamj.eu/tech/)
 
 I wasn't able to find the blog posts that I was moslty inspired to write this blog, but one of them was [this](https://simonwillison.net/2022/Nov/6/what-to-blog-about/).
 
@@ -34,7 +34,7 @@ Markdown is super simple and it is widely supported. It is also easy to maintain
 
 ## Initialize Jekyll
 
-The first step is to initialize Jekyll. I decided to use docker to avoid installing anything in my computer. So I created a new folder to host the dockerfile and a docs folder to contain all Jekyll related files. I followed the steps here: https://jekyllrb.com/docs/ but ran them in Docker.
+The first step is to initialize Jekyll. I decided to use docker to avoid installing anything in my computer. So I created a new folder to host the dockerfile and a docs folder to contain all Jekyll related files. I followed the steps [here](https://jekyllrb.com/docs/) but ran them in Docker.
 
 First thing was to move into the main folder and run these commands:
 
@@ -59,4 +59,6 @@ I just modified the about.markdown file and the \_config.yml file to add some in
 
 ## Configure github pages
 
-Not a ton to say here. I followed the steps in github pages documentation: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+Not a ton to say here. I followed the steps in [github pages documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
+
+And that's it. You can now see the site online in [https://marianobianchi.github.io/](https://marianobianchi.github.io/)
