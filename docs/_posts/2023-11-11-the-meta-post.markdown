@@ -46,8 +46,8 @@ First thing was to move into the main folder and run these commands:
 
 3. Then I entered the container as a root (using another terminal to avoid stopping the container) and ran :
 
-- `bundle add webrick` because it is needed to serve jekyll since ruby 3.0.0 version
-- `bundle install` to install all the dependencies and generate the Gemfile.lock file
+   - `bundle add webrick` because it is needed to serve jekyll since ruby 3.0.0 version
+   - `bundle install` to install all the dependencies and generate the Gemfile.lock file
 
 4. Then I exited the container and created a Dockerfile and a docker-compose.yml file to make it easier to build and run locally the site.
 
@@ -56,3 +56,7 @@ First thing was to move into the main folder and run these commands:
 Jekyll creates a bunch of files with different information and content. I haven't had time yet to read about them and understand how to customize the theme and the site in general but that will be part of another post. I just want to concentrate in the main things and put the site online.
 
 I just modified the about.markdown file and the \_config.yml file to add some information about the site and myself, removing the default values and text that Jekyll creates.
+
+## Configure github pages
+
+Not a ton to say here. I followed the steps in github pages documentation: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
