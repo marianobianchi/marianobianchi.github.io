@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts')).filter(({ data}) => !data.draft);
+---
+
+<Layout>
+	<h1 class="text-3xl font-bold underline">Hi!</h1>
+	<p>Welcome to my blog.</p>
+	<p>Here are my latest posts:</p>
+	<ul>
+		{posts.map(post => (
+			<li>
+				<a href={`/posts/${post.id}`}>{post.data.title}</a>
+			</li>
+		))}
+	</ul>
+
+</Layout>
