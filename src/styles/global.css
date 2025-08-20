@@ -9,3 +9,7 @@
     --peach: #DCCFC0;
     --grey: #EEEEEE;
 }
+
+@theme {
+    --color-sage: var(--sage);
+}

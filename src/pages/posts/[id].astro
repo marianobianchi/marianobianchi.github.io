@@ -3,26 +3,34 @@ import { getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const posts = (await getCollection("posts")).filter(({ data }) => !data.draft);
-    return posts.map((post) => ({
-        params: { id: post.id },
-        props: { post },
-    }));
+  const posts = (await getCollection("posts")).filter(
+    ({ data }) => !data.draft,
+  );
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
 }
 
 const { post } = Astro.props;
 const { data } = post;
 const { title, pubDate, tags = [], content, description } = data;
 
-const {Content} = await render(post);
+const { Content } = await render(post);
 ---
 
-<Layout>
-    <article class="prose">
-        <header>{title}</header>
-        <Content />
-        <p><strong>Published on:</strong> {pubDate}</p>
-        <p><strong>Description:</strong> {description}</p>
-        <p><strong>Tags:</strong> {tags.join(", ")}</p>
-    </article>
+<Layout title={title} description={description}>
+  <article class="prose">
+    <header>
+      <span
+        >{
+          Intl.DateTimeFormat("es-AR", { dateStyle: "short" }).format(pubDate)
+        }</span
+      >
+      |
+      <span>{title}</span>
+    </header>
+    <Content />
+    <footer><small>{tags.join(", ")}</small></footer>
+  </article>
 </Layout>

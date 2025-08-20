@@ -5,10 +5,9 @@ export const posts = defineCollection({
     loader: glob({pattern: '**/*.md(x)?', base: './src/content/posts'}),
     schema: z.object({
         title: z.string(),
-        content: z.string(),
         description: z.string().optional(),
         draft: z.boolean().default(false),
-        pubDate: z.date().transform((date) => date.toISOString()),
+        pubDate: z.date(),
         tags: z.array(z.string()).optional(),
         image: z.string().optional(),
     }),
