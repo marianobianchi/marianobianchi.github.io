@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="4400"
-   height="1587.4016"
-   viewBox="0 0 1164.1667 420.00001"
+   width="2100"
+   height="2100"
+   viewBox="0 0 555.62501 555.625"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
-   sodipodi:docname="whiletrue-mate-original.svg"
+   sodipodi:docname="whiletrue-mate-icon.svg"
    inkscape:export-filename="../b8daadfe/whiletrue-mate-logo-texto.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -28,7 +28,7 @@
      inkscape:document-units="mm"
      showborder="false"
      inkscape:zoom="0.18600187"
-     inkscape:cx="2252.6655"
+     inkscape:cx="2048.3665"
      inkscape:cy="1083.3224"
      inkscape:window-width="1854"
      inkscape:window-height="1011"
@@ -36,7 +36,8 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     showgrid="true">
+     showgrid="false"
+     showguides="true">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -50,7 +51,7 @@
        opacity="0.14901961"
        empspacing="5"
        enabled="true"
-       visible="true" />
+       visible="false" />
   </sodipodi:namedview>
   <defs
      id="defs1">
@@ -73,7 +74,7 @@
      id="layer1">
     <g
        id="g1"
-       transform="translate(13.758336)">
+       transform="translate(-19.18751,67.812505)">
       <path
          id="path5"
          style="fill:#000000;fill-opacity:1;stroke-width:5.57919;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.668548"
@@ -116,21 +117,5 @@
        transform="scale(0.26458333)"
        id="text2"
        style="font-size:66.6667px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;opacity:0.563786;fill:#100080;stroke-width:34.5222;stroke-linecap:square" />
-    <text
-       xml:space="preserve"
-       style="font-size:70px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.134;stroke-linecap:square"
-       x="634.08905"
-       y="188.41553"
-       id="text3"><tspan
-         sodipodi:role="line"
-         id="tspan3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:Monospace;-inkscape-font-specification:Monospace;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.134"
-         x="634.08905"
-         y="188.41553">while True:</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;font-family:Monospace;-inkscape-font-specification:Monospace;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.134"
-         x="634.08905"
-         y="275.91553"
-         id="tspan4">    mate()</tspan></text>
   </g>
 </svg>
