@@ -1,0 +1,24 @@
+---
+// Props: post (object from getCollection)
+const { post } = Astro.props;
+---
+
+<article
+  class="transform overflow-hidden rounded-lg border border-gray-100 bg-white shadow transition duration-200 hover:scale-101 hover:shadow-lg"
+>
+  <a href={`/posts/${post.id}`} class="block">
+    {
+      post.data.image && (
+        <img
+          src={post.data.image}
+          alt={post.data.title}
+          class="h-48 w-full object-cover"
+        />
+      )
+    }
+    <div class="p-4">
+      <h2 class="mb-2 text-xl font-semibold">{post.data.title}</h2>
+      <p class="prose">{post.data.description}</p>
+    </div>
+  </a>
+</article>
