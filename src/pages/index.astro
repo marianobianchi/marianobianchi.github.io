@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PostPreview from "../components/PostPreview.astro";
+
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts")).filter(({ data }) => !data.draft);
+---
+
+<Layout>
+  <main class="m-2 text-gray-600">
+    <p class="prose">
+      Este blog pensado principalmente para tener un lugar en donde guardar mis
+      experiencias y que le sirva a mi yo del futuro y por qué no a cualquier
+      persona que pase por acá.
+    </p>
+    <section class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((post) => <PostPreview post={post} />)}
+    </section>
+  </main>
+</Layout>
