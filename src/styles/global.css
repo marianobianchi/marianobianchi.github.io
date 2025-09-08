@@ -4,12 +4,17 @@
 
 :root {
     /* https://colorhunt.co/palette/faf9eea2af9bdccfc0eeeeee */
-    --beige: #FAF9EE;
     --sage: #A2AF9B;
-    --peach: #DCCFC0;
     --grey: #EEEEEE;
 }
 
 @theme {
     --color-sage: var(--sage);
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
