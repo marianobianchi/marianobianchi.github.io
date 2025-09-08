@@ -8,6 +8,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'https://marianobianchi.github.io',
-  base: '/marianobianchi.github.io',
+  site: 'https://marianobianchi.github.io'
 });
