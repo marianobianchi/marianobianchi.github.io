@@ -8,6 +8,7 @@ export const posts = defineCollection({
         description: z.string().optional(),
         draft: z.boolean().default(false),
         pubDate: z.date(),
+        author: z.string().default("While True Mate"),
         tags: z.array(z.string()).optional(),
         image: z.string().optional(),
     }),

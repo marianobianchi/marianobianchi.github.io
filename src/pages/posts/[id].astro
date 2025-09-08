@@ -14,21 +14,23 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { data } = post;
-const { title, pubDate, tags = [], description } = data;
+const { title, pubDate, tags = [], description, author } = data;
+const formattedDate = Intl.DateTimeFormat("es-AR", {
+  dateStyle: "long", //  "full", "long", "medium", "short"
+  timeZone: "UTC",
+}).format(pubDate);
 
 const { Content } = await render(post);
 ---
 
 <Layout title={title} description={description}>
-  <article class="prose">
-    <header>
-      <span
-        >{
-          Intl.DateTimeFormat("es-AR", { dateStyle: "short" }).format(pubDate)
-        }</span
-      >
-      |
-      <span>{title}</span>
+  <article class="prose lg:prose-lg">
+    <header class="text-gray-500">
+      <time datetime={pubDate.toISOString()}>
+        {formattedDate}
+      </time>
+      <span class="m-2">|</span>
+      <span>{author}</span>
     </header>
     <Content />
     <footer><small>{tags.join(", ")}</small></footer>

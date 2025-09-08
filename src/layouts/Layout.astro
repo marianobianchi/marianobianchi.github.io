@@ -24,7 +24,9 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } =
   </head>
   <body>
     <Header />
-    <slot />
+    <main class="m-8 text-gray-600 md:flex md:flex-col md:items-center">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
